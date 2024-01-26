@@ -1,0 +1,130 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+  scroll-padding-top: 50px;
+}
+
+#leftMenu {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  padding: 30px 0px;
+  background-color: #000;
+  height: 100%;
+  width: 0;
+  z-index: 2;
+  overflow: hidden;
+}
+#leftMenu a {
+  text-decoration: none;
+  padding: 16px 25px;
+  font-size: 20px;
+  color: #fff;
+  text-align: start;
+  transition: 0.5s;
+}
+#leftMenu a:hover,
+a.active {
+  color: #6f1634 !important;
+}
+#leftMenu .closeBtn {
+  text-align: end;
+}
+.openNav {
+  font-size: 30px;
+  cursor: pointer;
+  color: #fff;
+  position: absolute;
+  left: 10px;
+}
+
+#home {
+  background-image: url(../image/bg.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+
+.overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+#home h1 {
+  font-size: 70px;
+}
+
+#home h2 {
+  font-size: 50px;
+}
+
+#accordion {
+  width: 50%;
+  margin: 20px auto;
+}
+#accordion h3 {
+  background-color: #6f1634;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  border-bottom: 1px solid;
+}
+#accordion .toggle-bar {
+  background: #ffe9b0;
+  padding: 10px;
+  display: none;
+}
+
+/* count down*/
+#count {
+  background-image: url(../image/joinUs.jpg);
+  background-size: cover;
+  background-position: center center;
+  height: 300px;
+}
+#countdown {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+#countdown .flip-clock-label {
+  color: #fff;
+  font-size: 20px;
+}
+
+/* contact us*/
+#contact h2 {
+  color: #6f1634;
+}
+#contact .social-icon .icon {
+  color: #000;
+  width: 40px;
+  height: 40px;
+  border: 3px solid #6f1634;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  margin-bottom: 25px;
+  transition: 0.5s;
+  margin: 5px;
+}
+
+#contact .social-icon .icon:hover {
+  background-color: #6f1634;
+  border-color: #fff;
+  color: #fff;
+}
+#contact button {
+  background-color: #6f1634;
+  color: #fff;
+  width: fit-content;
+}
